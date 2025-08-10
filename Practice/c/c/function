@@ -1,0 +1,15 @@
+functions are two types
+     (1) pre-defined functions
+     (2) user-defined functions
+whenever there is a term called functions in c lagguage we need to think of three points
+      (i) function declaration
+      (ii) function call
+      (iii) function call
+(1)pre-defined funct5ions:  In pre-defined function 
+    * function is declared at <stdio.h>
+    * function is called within the main function
+    * function is defined at <>
+(2)user-defined functions: in user-defined
+    * function is declared before the main function
+    *function is called within the main function
+    * function is defined after the main function 
