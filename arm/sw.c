@@ -1,0 +1,38 @@
+#include<lpc21xx.h>
+#include"header.h"
+main()
+{
+int i=0,j=0,k=0;
+IODIR0=7<<17;
+IOSET0=7<<17;
+while(1)
+{
+ if(((IOPIN0>>14)&1)==0)
+ {
+  while(((IOPIN0>>14)&1)==0);
+  i=!i;
+  	if(i==1)
+  IOCLR0=1<<17;
+  else
+  IOSET0=1<<17;
+ }
+  if(((IOPIN0>>15)&1)==0)
+ {
+  while(((IOPIN0>>15)&1)==0);
+  j=!j;
+  	if(j==1)
+  IOCLR0=1<<18;
+  else
+  IOSET0=1<<18;
+ }
+ if(((IOPIN0>>16)&1)==0)
+ {
+  while(((IOPIN0>>16)&1)==0);
+  k=!k;
+  	if(k==1)
+  IOCLR0=1<<19;
+  else
+  IOSET0=1<<19;
+ }
+}
+}

@@ -1,0 +1,21 @@
+extern void uart0_init(unsigned int baud);
+extern void uart0_tx_string(unsigned char *ptr);
+extern void i2c_init(void);
+extern void i2c_write(unsigned char sa,unsigned char ma,unsigned char data);
+extern unsigned char i2c_read(unsigned char sa,unsigned char ma);
+extern void uart0_tx_data(unsigned char data);
+unsigned char uart0_rx_data(void);
+extern void lcd4_data(unsigned char data);
+extern void lcd4_cmd(unsigned char cmd);
+extern void lcd4_init(void);
+extern void delay_ms(unsigned int ms);
+extern void config_vic_for_sw3(void);
+extern void config_sw3(void);
+extern void lcd4_string(unsigned char *p);
+extern void config_vic_for_sw2(void);
+extern void config_sw2(void);
+extern void config_vic_for_sw1(void);
+extern void config_sw1(void);
+extern unsigned int i2c_detect(unsigned int sa);
+extern void uart0_tx_hexa(unsigned int num);
+
